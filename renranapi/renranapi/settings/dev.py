@@ -165,3 +165,9 @@ LOGGING = {
         },
     }
 }
+
+# drf的相关配置
+REST_FRAMEWORK = {
+    # 异常处理
+    'EXCEPTION_HANDLER': 'renranapi.utils.exceptions.custom_exception_handler',
+}
