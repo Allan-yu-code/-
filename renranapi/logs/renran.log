@@ -9,3 +9,13 @@ WARNING 2020-04-01 08:19:56,461 log 228 Not Found: /favicon.ico
 WARNING 2020-04-01 08:19:56,463 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1975
 INFO 2020-04-01 08:45:07,046 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
 INFO 2020-04-01 08:45:11,146 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-01 08:54:51,571 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-01 08:54:55,191 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-01 08:55:11,648 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-01 08:56:25,910 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-01 08:57:30,790 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-01 08:58:23,293 autoreload 203 /home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/db/backends/mysql/operations.py changed, reloading.
+INFO 2020-04-01 08:58:25,878 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-01 08:58:27,953 autoreload 203 /home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/db/backends/mysql/operations.py changed, reloading.
+INFO 2020-04-01 08:58:30,361 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-01 08:59:24,100 autoreload 578 Watching for file changes with StatReloader
