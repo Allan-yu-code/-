@@ -7,8 +7,8 @@
         <!-- 右上角 -->
         <!-- 未登录显示登录/注册/写文章 -->
         <a class="btn write-btn" target="_blank" href="/writer"><img class="icon-write" src="/static/image/write.svg">写文章</a>
-        <a class="btn sign-up" id="sign_up" href="/register">注册</a>
-        <a class="btn log-in" id="sign_in" href="/login">登录</a>
+        <router-link class="btn sign-up" id="sign_up" to="/register">注册</router-link>
+        <router-link class="btn log-in" id="sign_in" to="/login">登录</router-link>
         <div class="container">
           <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav">
