@@ -19,3 +19,29 @@ INFO 2020-04-01 08:58:25,878 autoreload 578 Watching for file changes with StatR
 INFO 2020-04-01 08:58:27,953 autoreload 203 /home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/db/backends/mysql/operations.py changed, reloading.
 INFO 2020-04-01 08:58:30,361 autoreload 578 Watching for file changes with StatReloader
 INFO 2020-04-01 08:59:24,100 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 02:11:27,288 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-04-02 02:11:28,490 exception 77 Invalid HTTP_HOST header: 'api.renran.cn:8000'. You may need to add 'api.renran.cn' to ALLOWED_HOSTS.
+WARNING 2020-04-02 02:11:28,605 log 228 Bad Request: /
+WARNING 2020-04-02 02:11:28,609 basehttp 154 "GET / HTTP/1.1" 400 66336
+ERROR 2020-04-02 02:11:29,266 exception 77 Invalid HTTP_HOST header: 'api.renran.cn:8000'. You may need to add 'api.renran.cn' to ALLOWED_HOSTS.
+ERROR 2020-04-02 02:11:29,371 exception 77 Invalid HTTP_HOST header: 'api.renran.cn:8000'. You may need to add 'api.renran.cn' to ALLOWED_HOSTS.
+WARNING 2020-04-02 02:11:29,624 log 228 Bad Request: /favicon.ico
+WARNING 2020-04-02 02:11:29,686 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 66250
+WARNING 2020-04-02 02:11:29,757 log 228 Bad Request: /
+WARNING 2020-04-02 02:11:29,762 basehttp 154 "GET / HTTP/1.1" 400 66336
+ERROR 2020-04-02 02:11:30,391 exception 77 Invalid HTTP_HOST header: 'api.renran.cn:8000'. You may need to add 'api.renran.cn' to ALLOWED_HOSTS.
+WARNING 2020-04-02 02:11:30,535 log 228 Bad Request: /favicon.ico
+WARNING 2020-04-02 02:11:30,537 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 66511
+INFO 2020-04-02 02:12:10,487 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 02:12:12,380 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 02:12:19,185 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2020-04-02 02:12:19,285 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2020-04-02 02:12:19,675 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2020-04-02 02:12:19,737 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2020-04-02 02:12:19,766 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+WARNING 2020-04-02 02:12:19,776 log 228 Not Found: /favicon.ico
+WARNING 2020-04-02 02:12:19,785 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1979
+INFO 2020-04-02 02:13:22,492 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 02:13:29,931 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2020-04-02 02:13:31,929 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2020-04-02 02:13:32,084 basehttp 154 "GET / HTTP/1.1" 200 16348

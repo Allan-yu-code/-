@@ -26,7 +26,7 @@ SECRET_KEY = 'xnpseyxyehz0rs(nb%$=zezezog9g-#wdoa$p92*!2b6xhxa=m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api.renran.cn',]
 
 
 # Application definition
