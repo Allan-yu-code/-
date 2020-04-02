@@ -45,3 +45,9 @@ INFO 2020-04-02 02:13:22,492 autoreload 578 Watching for file changes with StatR
 INFO 2020-04-02 02:13:29,931 basehttp 154 "GET / HTTP/1.1" 200 16348
 INFO 2020-04-02 02:13:31,929 basehttp 154 "GET / HTTP/1.1" 200 16348
 INFO 2020-04-02 02:13:32,084 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2020-04-02 02:18:09,706 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 02:18:12,982 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 02:18:27,507 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 02:18:29,107 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 02:20:09,858 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 02:20:11,510 autoreload 578 Watching for file changes with StatReloader
