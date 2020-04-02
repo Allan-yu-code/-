@@ -15,7 +15,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # 项目的主应用
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+# 给系统设置apps作为导包路径
+import sys
+sys.path.insert(0,os.path.join(BASE_DIR,"apps"))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -45,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'corsheaders',
+
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -186,4 +190,21 @@ LOGGING = {
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'renranapi.utils.exceptions.custom_exception_handler',
+    # 用户认证方式
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
 }
+
+import datetime
+# jwt相关配置项
+JWT_AUTH = {
+    # jwt有效时间
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+}
+
+# 配置django内部的Auth认证模块采用我们自定义的
+# 配置项的值格式必须： "子应用目录名.模型类名"
+AUTH_USER_MODEL = 'users.User'

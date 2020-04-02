@@ -51,3 +51,22 @@ INFO 2020-04-02 02:18:27,507 autoreload 203 /home/moluo/Desktop/renran/renranapi
 INFO 2020-04-02 02:18:29,107 autoreload 578 Watching for file changes with StatReloader
 INFO 2020-04-02 02:20:09,858 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
 INFO 2020-04-02 02:20:11,510 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 03:07:03,025 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 03:07:52,094 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 03:09:13,582 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 03:10:55,149 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 03:12:26,563 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 03:12:27,386 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 03:12:32,997 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 03:21:58,262 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 03:22:00,155 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 04:13:14,332 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 04:13:16,257 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 04:19:15,131 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 04:19:17,689 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 04:19:23,424 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-02 04:19:24,790 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-02 04:23:33,070 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-02 04:25:02,125 log 228 Bad Request: /users/login/
+WARNING 2020-04-02 04:25:02,127 basehttp 154 "POST /users/login/ HTTP/1.1" 400 79
+INFO 2020-04-02 04:27:55,204 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
