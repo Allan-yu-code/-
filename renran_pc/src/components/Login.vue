@@ -14,22 +14,22 @@
 <div class="js-sign-in-container">
   <form id="new_session" action="" method="post">
       <div class="input-prepend restyle js-normal">
-        <input placeholder="手机号或邮箱" type="text" name="session[email_or_mobile_number]" id="session_email_or_mobile_number">
+        <input placeholder="手机号或邮箱" type="text" v-model="username">
         <i class="iconfont ic-user"></i>
       </div>
     <!-- 海外登录登录名输入框 -->
 
     <div class="input-prepend">
-      <input placeholder="密码" type="password" name="password" id="session_password">
+      <input placeholder="密码" type="password" v-model="password">
       <i class="iconfont ic-password"></i>
     </div>
     <div class="remember-btn">
-      <input type="checkbox" value="true" checked="checked" name="remember_me" id="session_remember_me"><span>记住我</span>
+      <input type="checkbox" value="true" checked="checked" v-model="remember_me"><span>记住我</span>
     </div>
     <div class="forget-btn">
       <a class="" data-toggle="dropdown" href="">登录遇到问题?</a>
     </div>
-    <button class="sign-in-button" id="sign-in-form-submit-btn" type="button">
+    <button class="sign-in-button" id="sign-in-form-submit-btn" type="button" @click.stop="loginHandler">
       <span id="sign-in-loading"></span>
       登录
     </button>
@@ -55,7 +55,53 @@
 
 <script>
     export default {
-        name: "Login"
+        name: "Login",
+        data(){
+            return {
+                username:"",
+                password:"",
+                remember_me: false, //记住登录状态
+            }
+        },
+        methods:{
+            loginHandler(){
+                // 登录处理
+                // 1. 验证数据
+                if(this.username.length<1 || this.password.length<1){
+                    this.$message.error("对不起，账号或密码不能为空！");
+                    return;
+                }
+                // 2. 发送请求
+                this.$axios.post(`${this.$settings.Host}/users/login/`,{
+                  username: this.username,
+                  password: this.password,
+                }).then(response=>{
+                  　// 3. 保存响应数据
+
+                   if(this.remember_me){
+                     // 长期记住登录状态
+                     localStorage.user_token = response.data.token;
+                     sessionStorage.removeItem("user_token");
+                   }else{
+                     // 不记住登录状态
+                     sessionStorage.user_token = response.data.token;
+                     localStorage.removeItem("user_token");
+                   }
+
+                   this.$confirm(`欢迎登录回到${this.$settings.Website}，xxx`, '登录成功', {
+                      confirmButtonText: '跳转到首页',
+                      cancelButtonText: '返回上一页',
+                      type: 'success'
+                    }).then(() => {
+                      this.$router.push("/");
+                    }).catch(() => {
+                      this.$router.go(-1);
+                    });
+                }).catch(error=>{
+                    this.$message.error(`登录失败！`);
+                });
+            }
+        }
     }
 </script>
 

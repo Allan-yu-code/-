@@ -70,3 +70,33 @@ INFO 2020-04-02 04:23:33,070 autoreload 578 Watching for file changes with StatR
 WARNING 2020-04-02 04:25:02,125 log 228 Bad Request: /users/login/
 WARNING 2020-04-02 04:25:02,127 basehttp 154 "POST /users/login/ HTTP/1.1" 400 79
 INFO 2020-04-02 04:27:55,204 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
+INFO 2020-04-03 00:54:42,048 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 00:54:45,979 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
+ERROR 2020-04-03 01:18:51,633 log 228 Internal Server Error: /users/login
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/utils/deprecation.py", line 93, in __call__
+    response = self.process_request(request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/middleware/common.py", line 53, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/middleware/common.py", line 93, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to api.renran.cn:8000/users/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2020-04-03 01:18:51,637 basehttp 154 "POST /users/login HTTP/1.1" 500 67870
+INFO 2020-04-03 01:20:03,091 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
+INFO 2020-04-03 01:28:51,109 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+WARNING 2020-04-03 01:28:51,363 log 228 Bad Request: /users/login/
+WARNING 2020-04-03 01:28:51,364 basehttp 154 "POST /users/login/ HTTP/1.1" 400 68
+INFO 2020-04-03 01:30:00,661 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
+WARNING 2020-04-03 01:30:15,773 log 228 Bad Request: /users/login/
+WARNING 2020-04-03 01:30:15,775 basehttp 154 "POST /users/login/ HTTP/1.1" 400 68
+WARNING 2020-04-03 01:36:00,513 log 228 Bad Request: /users/login/
+WARNING 2020-04-03 01:36:00,513 basehttp 154 "POST /users/login/ HTTP/1.1" 400 68
+INFO 2020-04-03 01:36:06,288 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
+INFO 2020-04-03 01:36:10,266 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
+INFO 2020-04-03 01:36:30,857 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
+INFO 2020-04-03 02:11:56,647 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2020-04-03 02:11:56,870 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
+INFO 2020-04-03 02:12:26,087 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2020-04-03 02:12:26,259 basehttp 154 "POST /users/login/ HTTP/1.1" 200 172
