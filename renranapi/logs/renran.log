@@ -158,3 +158,66 @@ WARNING 2020-04-03 02:59:14,667 log 228 Bad Request: /users/login/
 WARNING 2020-04-03 02:59:14,668 basehttp 154 "POST /users/login/ HTTP/1.1" 400 68
 INFO 2020-04-03 03:00:15,398 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
 INFO 2020-04-03 03:00:18,241 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 03:34:02,473 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/settings/dev.py changed, reloading.
+INFO 2020-04-03 03:34:05,515 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 03:46:23,711 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2020-04-03 03:46:24,054 basehttp 154 "POST /users/login/ HTTP/1.1" 200 253
+INFO 2020-04-03 03:56:49,111 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/urls.py changed, reloading.
+INFO 2020-04-03 03:56:55,095 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:09:40,134 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:09:57,316 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-03 04:09:59,179 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:10:29,125 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-03 04:10:31,206 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:10:52,537 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-03 04:10:53,828 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:11:01,269 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-03 04:11:02,991 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-03 04:12:15,054 log 228 Not Found: /user/captcha/
+WARNING 2020-04-03 04:12:15,058 basehttp 154 "GET /user/captcha/?ticket=t021qK07CExWvVhILYIQIGS96tAwDVvVPy65XTVOlr-lRkjjsBHT1BGaQpGDlvUZNqZ2ELRszeUrvDRVT1i94ds03GpE5e4_sgrY44vRHhr7aEVfYPRbqSXOQ**&randstr=@TwE HTTP/1.1" 404 2239
+ERROR 2020-04-03 04:13:20,529 log 228 Internal Server Error: /users/captcha/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py", line 27, in get
+    ret = self.txrequest(params)
+  File "/home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py", line 32, in txrequest
+    content = urlopen(url, params).read()
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 524, in open
+    req = meth(req)
+  File "/usr/lib/python3.6/urllib/request.py", line 1248, in do_request_
+    raise TypeError(msg)
+TypeError: POST data should be bytes, an iterable of bytes, or a file object. It cannot be of type str.
+ERROR 2020-04-03 04:13:20,543 basehttp 154 "GET /users/captcha/?ticket=t02BnXwXYVrOjD64vQlhM3sXPTe1zkObhPqTlEOYr34sRU75yTAMMe431HnMIZoxGvxKwxWS3m4REh5u8UXne0yQCtPmH-vkN1Ee7y76iZ6BCM3o1cwdLylZw**&randstr=@05D HTTP/1.1" 500 17928
+INFO 2020-04-03 04:16:26,611 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-03 04:16:28,274 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:16:48,217 basehttp 154 "GET /users/captcha/?ticket=t02s_xReY2z17-cu2J-zNhEivQx-lprWS3A6S0x408E2FxPQUG7-oYK4fdudvY4LJPIMlf3x4rYYgvqv6bKoIW1NUIQUp0R12jDyreYcNbNSGlyRE9LY7HLSQ**&randstr=@y1E HTTP/1.1" 200 17
+INFO 2020-04-03 04:17:33,191 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-03 04:17:35,908 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:17:50,467 basehttp 154 "GET /users/captcha/?ticket=t02Y8vB1CuimyLvT7xdI_TmKzXZ5FjhH9-YH1t_FQBBUxZ0ne4zKtioiUTtkmpWaZyTKlU8NUp3dN1yP5mXTDrOXQI_zI5eISZxjcA9NtMXm5b0J0909yLs4w**&randstr=@591 HTTP/1.1" 200 17
+INFO 2020-04-03 04:18:01,752 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-03 04:18:03,469 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:18:16,964 basehttp 154 "GET /users/captcha/?ticket=t024piMxnBPPEpHmJ-ZvDWc3CGCRa-khJoH0WsyVEb-_WwuZUk4G5mOhN8AdFbYtDqBN1HYJnWKSX6UGcxmb1zPdT62odPiykiYY0mbLhxEwCV0JnWC3Vn9UQ**&randstr=@qgC HTTP/1.1" 200 16
+INFO 2020-04-03 04:20:22,633 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-03 04:20:25,074 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-03 04:21:54,967 basehttp 154 "GET /users/captcha/?ticket=t023LNRld69mqs0EwX1d3mteD5v8K6hX6OzR7YOeoBbB149wl7hl5DbERtddeA9zwlU5hQ_NssaPyxUbryb2A-YtXD_ozl_MZ7M-JrzHOhIq9BmYk1jXUXg0w**&randstr=@pEk HTTP/1.1" 200 16
+INFO 2020-04-03 04:21:55,004 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2020-04-03 04:21:55,314 basehttp 154 "POST /users/login/ HTTP/1.1" 200 253

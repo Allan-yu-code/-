@@ -19,6 +19,9 @@ import "element-ui/lib/theme-chalk/index.css";
 // 调用插件
 Vue.use(ElementUI);
 
+// 导入腾讯防水墙验证码
+import "../static/js/TCaptcha";
+
 
 import axios from 'axios'; // 从node_modules目录中导入包
 // 允许ajax发送请求时附带cookie，设置为不允许

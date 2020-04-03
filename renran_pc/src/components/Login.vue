@@ -29,7 +29,7 @@
     <div class="forget-btn">
       <a class="" data-toggle="dropdown" href="">登录遇到问题?</a>
     </div>
-    <button class="sign-in-button" id="sign-in-form-submit-btn" type="button" @click.stop="loginHandler">
+    <button class="sign-in-button" id="sign-in-form-submit-btn" type="button" @click.stop="show_captcha">
       <span id="sign-in-loading"></span>
       登录
     </button>
@@ -66,17 +66,12 @@
         methods:{
             loginHandler(){
                 // 登录处理
-                // 1. 验证数据
-                if(this.username.length<1 || this.password.length<1){
-                    this.$message.error("对不起，账号或密码不能为空！");
-                    return;
-                }
-                // 2. 发送请求
+                // 发送请求
                 this.$axios.post(`${this.$settings.Host}/users/login/`,{
                   username: this.username,
                   password: this.password,
                 }).then(response=>{
-                  　// 3. 保存响应数据
+                  　// 保存响应数据
 
                    if(this.remember_me){
                      // 长期记住登录状态
@@ -116,6 +111,34 @@
                 }).catch(error=>{
                     this.$message.error(`登录失败！`);
                 });
+            },
+            show_captcha(){
+                // 显示验证码
+                // 1. 验证数据
+                if(this.username.length<1 || this.password.length<1){
+                    this.$message.error("对不起，账号或密码不能为空！");
+                    return;
+                }
+                // 2. 创建验证码
+                var captcha = new TencentCaptcha(this.$settings.TC_captcha.app_id, res=>{
+                    console.log(res);
+                    // 提交数据给drf服务端
+                    this.$axios.get(`${this.$settings.Host}/users/captcha/`,{
+                        params:{
+                          ticket: res.ticket,
+                          randstr: res.randstr,
+                        }
+                    }).then(response=>{
+                        if(response.data.message){
+                            this.loginHandler();
+                        }else{
+                            this.$message.error("验证失败！");
+                        }
+                    }).catch(error=>{
+                        console.log("验证失败！");
+                    });
+                });
+                captcha.show();
             }
         }
     }
