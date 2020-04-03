@@ -81,14 +81,30 @@
                    if(this.remember_me){
                      // 长期记住登录状态
                      localStorage.user_token = response.data.token;
+                     localStorage.user_id = response.data.id;
+                     localStorage.user_name = response.data.username;
+                     localStorage.user_avatar = response.data.avatar;
+                     localStorage.user_nickname = response.data.nickname;
                      sessionStorage.removeItem("user_token");
+                     sessionStorage.removeItem("user_id");
+                     sessionStorage.removeItem("user_name");
+                     sessionStorage.removeItem("user_avatar");
+                     sessionStorage.removeItem("user_nickname");
                    }else{
                      // 不记住登录状态
                      sessionStorage.user_token = response.data.token;
+                     sessionStorage.user_id = response.data.id;
+                     sessionStorage.user_name = response.data.username;
+                     sessionStorage.user_avatar = response.data.avatar;
+                     sessionStorage.user_nickname = response.data.nickname;
                      localStorage.removeItem("user_token");
+                     localStorage.removeItem("user_id");
+                     localStorage.removeItem("user_name");
+                     localStorage.removeItem("user_avatar");
+                     localStorage.removeItem("user_nickname");
                    }
-
-                   this.$confirm(`欢迎登录回到${this.$settings.Website}，xxx`, '登录成功', {
+                   let name = response.data.nickname || response.data.username;
+                   this.$confirm(`欢迎登录回到${this.$settings.Website}, ${name}`, '登录成功', {
                       confirmButtonText: '跳转到首页',
                       cancelButtonText: '返回上一页',
                       type: 'success'

@@ -203,8 +203,12 @@ import datetime
 JWT_AUTH = {
     # jwt有效时间
     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    # 自定义响应数据
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
 }
 
 # 配置django内部的Auth认证模块采用我们自定义的
 # 配置项的值格式必须： "子应用目录名.模型类名"
 AUTH_USER_MODEL = 'users.User'
+
+AUTHENTICATION_BACKENDS = [ 'users.utils.AccountModelBackend', ]
