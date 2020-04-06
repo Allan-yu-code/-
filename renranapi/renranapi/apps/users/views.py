@@ -36,3 +36,11 @@ class CaptchaAPIView(APIView):
         except:
             log.error( "验证码错误，%s:%s" % (res["response"], res["err_msg"]) )
             return False
+
+from rest_framework.generics import CreateAPIView
+from .models import User
+from .serializers import UserModelSerializer
+class UserAPIView(CreateAPIView):
+    """用户视图接口"""
+    queryset = User.objects.all()
+    serializer_class = UserModelSerializer

@@ -221,3 +221,147 @@ INFO 2020-04-03 04:20:25,074 autoreload 578 Watching for file changes with StatR
 INFO 2020-04-03 04:21:54,967 basehttp 154 "GET /users/captcha/?ticket=t023LNRld69mqs0EwX1d3mteD5v8K6hX6OzR7YOeoBbB149wl7hl5DbERtddeA9zwlU5hQ_NssaPyxUbryb2A-YtXD_ozl_MZ7M-JrzHOhIq9BmYk1jXUXg0w**&randstr=@pEk HTTP/1.1" 200 16
 INFO 2020-04-03 04:21:55,004 basehttp 154 "OPTIONS /users/login/ HTTP/1.1" 200 0
 INFO 2020-04-03 04:21:55,314 basehttp 154 "POST /users/login/ HTTP/1.1" 200 253
+INFO 2020-04-06 00:37:03,814 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-06 00:54:44,546 log 228 Not Found: /
+WARNING 2020-04-06 00:54:44,558 basehttp 154 "GET / HTTP/1.1" 404 2034
+WARNING 2020-04-06 00:54:45,077 log 228 Not Found: /
+WARNING 2020-04-06 00:54:45,078 basehttp 154 "GET / HTTP/1.1" 404 2034
+WARNING 2020-04-06 00:54:46,678 log 228 Not Found: /favicon.ico
+WARNING 2020-04-06 00:54:46,679 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2085
+WARNING 2020-04-06 00:54:46,754 log 228 Not Found: /favicon.ico
+WARNING 2020-04-06 00:54:46,756 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2085
+INFO 2020-04-06 01:23:49,311 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/views.py changed, reloading.
+INFO 2020-04-06 01:23:52,520 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:41:57,348 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:42:22,234 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:44:10,736 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/urls.py changed, reloading.
+INFO 2020-04-06 01:44:12,498 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-06 01:44:20,906 log 228 Bad Request: /users/
+WARNING 2020-04-06 01:44:20,907 basehttp 154 "POST /users/ HTTP/1.1" 400 40
+WARNING 2020-04-06 01:44:46,620 log 228 Bad Request: /users/
+WARNING 2020-04-06 01:44:46,621 basehttp 154 "POST /users/ HTTP/1.1" 400 31
+INFO 2020-04-06 01:46:39,959 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:46:41,628 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-06 01:46:46,778 log 228 Bad Request: /users/
+WARNING 2020-04-06 01:46:46,779 basehttp 154 "POST /users/ HTTP/1.1" 400 31
+INFO 2020-04-06 01:46:55,938 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-06 01:46:59,502 log 228 Bad Request: /users/
+WARNING 2020-04-06 01:46:59,503 basehttp 154 "POST /users/ HTTP/1.1" 400 31
+INFO 2020-04-06 01:47:29,427 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:47:30,459 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:47:37,532 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:47:38,862 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-06 01:47:40,546 log 228 Bad Request: /users/
+WARNING 2020-04-06 01:47:40,547 basehttp 154 "POST /users/ HTTP/1.1" 400 38
+INFO 2020-04-06 01:47:59,761 basehttp 154 "POST /users/ HTTP/1.1" 201 38
+INFO 2020-04-06 01:48:31,476 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:48:33,322 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:49:34,690 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:49:36,158 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:49:42,358 basehttp 154 "POST /users/ HTTP/1.1" 201 243
+INFO 2020-04-06 01:50:14,402 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-06 01:50:31,084 log 228 Bad Request: /users/
+WARNING 2020-04-06 01:50:31,085 basehttp 154 "POST /users/ HTTP/1.1" 400 40
+INFO 2020-04-06 01:51:20,594 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:51:21,977 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:51:31,666 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:51:32,852 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-04-06 01:51:39,596 log 228 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 486, in to_internal_value
+    for field in fields:
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 369, in _writable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 1072, in get_fields
+    fields[field_name] = field_class(**field_kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/fields.py", line 808, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'error_meesage'
+ERROR 2020-04-06 01:51:39,602 basehttp 154 "POST /users/ HTTP/1.1" 500 18375
+INFO 2020-04-06 01:51:47,706 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:51:49,141 autoreload 578 Watching for file changes with StatReloader
+ERROR 2020-04-06 01:51:52,323 log 228 Internal Server Error: /users/
+Traceback (most recent call last):
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/generics.py", line 190, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 234, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 433, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 486, in to_internal_value
+    for field in fields:
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 369, in _writable_fields
+    for field in self.fields.values():
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/serializers.py", line 1072, in get_fields
+    fields[field_name] = field_class(**field_kwargs)
+  File "/home/moluo/.virtualenvs/renran/lib/python3.6/site-packages/rest_framework/fields.py", line 808, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'message'
+ERROR 2020-04-06 01:51:52,327 basehttp 154 "POST /users/ HTTP/1.1" 500 18363
+INFO 2020-04-06 01:52:31,399 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:52:32,874 autoreload 578 Watching for file changes with StatReloader
+WARNING 2020-04-06 01:52:35,854 log 228 Bad Request: /users/
+WARNING 2020-04-06 01:52:35,855 basehttp 154 "POST /users/ HTTP/1.1" 400 56
+INFO 2020-04-06 01:53:16,509 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:53:18,306 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:53:27,762 basehttp 154 "POST /users/ HTTP/1.1" 201 250
+INFO 2020-04-06 01:55:32,868 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:55:35,960 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:55:40,102 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:55:41,638 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-06 01:55:53,296 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/users/serializers.py changed, reloading.
+INFO 2020-04-06 01:55:54,954 autoreload 578 Watching for file changes with StatReloader
