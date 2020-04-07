@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django_redis import get_redis_connection
 from .models import User
 import re
 class UserModelSerializer(serializers.ModelSerializer):
@@ -41,7 +42,11 @@ class UserModelSerializer(serializers.ModelSerializer):
             pass
 
         # todo 短信验证码的校验
-
+        redis_conn = get_redis_connection("sms_code")
+        sms_code_bytes = redis_conn.get("sms_%s" % mobile)
+        sms_code = attrs.get("sms_code")
+        if sms_code != sms_code_bytes.decode():
+            raise serializers.ValidationError("对不起，验证码错误或已过期！")
         return attrs
 
     # 4. 数据库操作

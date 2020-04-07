@@ -21,9 +21,9 @@
               <i class="iconfont ic-phonenumber"></i>
             </div>
           <div class="input-prepend restyle no-radius security-up-code js-security-number" v-if="is_show_sms_code">
-              <input type="text" v-model="sms_code" id="sms_code" placeholder="手机验证码">
+            <input type="text" v-model="sms_code" id="sms_code" placeholder="手机验证码">
             <i class="iconfont ic-verify"></i>
-            <a tabindex="-1" class="btn-up-resend js-send-code-button disable" href="javascript:void(0);" id="send_code">{{sms_code_text}}</a>
+            <a tabindex="-1" class="btn-up-resend js-send-code-button" :class="{disable:is_send_sms}" href="javascript:void(0);" id="send_code" @click.stop="send_sms">{{sms_code_text}}</a>
           </div>
           <input type="hidden" name="security_number" id="security_number">
           <div class="input-prepend">
@@ -59,6 +59,7 @@
             password:"",
             sms_code_text:"发送验证码",
             is_show_sms_code:false,
+            is_send_sms: false,  // 短信发送冷却状态
           }
         },
         watch:{
@@ -118,6 +119,30 @@
                     this.$message.error("注册失败！");
                 });
 
+            },
+            send_sms(){
+                // 判断是否在60s的冷却时间内
+                if(this.is_send_sms){
+                    return;
+                }
+
+                // 发送短信
+                this.$axios.get(`${this.$settings.Host}/users/sms/${this.mobile}/`).then(response=>{
+                  this.$message.success(response.data.message);
+                  this.is_send_sms = true;
+                  let t = 60;
+                  let timer = setInterval(()=>{
+                      if(--t<1){
+                          this.sms_code_text = "发送验证码";
+                          this.is_send_sms = false; // 允许重新点击发送验证码
+                          clearInterval(timer);     // 关闭倒计时
+                      }else{
+                          this.sms_code_text = `${t}秒后点击发送`;
+                      }
+                  },1000);
+                }).catch(error=>{
+                  this.$message.error(error.response.data.message);
+                })
             }
         }
     }

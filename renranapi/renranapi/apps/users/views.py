@@ -37,14 +37,14 @@ class CaptchaAPIView(APIView):
             log.error( "验证码错误，%s:%s" % (res["response"], res["err_msg"]) )
             return False
 
-from rest_framework.mixins import CreateModelMixin
+from rest_framework.generics import CreateAPIView
 from .models import User
 from .serializers import UserModelSerializer
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.decorators import action
 from rest_framework import status
 import re
-class UserAPIView(GenericViewSet,CreateModelMixin):
+class UserAPIView(GenericViewSet,CreateAPIView):
     """用户视图接口"""
     queryset = User.objects.all()
     serializer_class = UserModelSerializer
@@ -78,7 +78,7 @@ class SMSCodeAPIView(APIView):
         redis_conn = get_redis_connection("sms_code")
         interval = redis_conn.ttl("interval_%s" % mobile) # 如果数据过期了，则值为-2
         if interval > -1:
-            return Response({"message":"对不起，发送短信频繁，请在%d秒再次点击发送！" % interval})
+            return Response({"message":"对不起，发送短信频繁，请在%d秒再次点击发送！" % interval},status=status.HTTP_400_BAD_REQUEST)
 
         # 1. 生成验证码
         sms_code = "%05d" % random.randint(0,99999)
