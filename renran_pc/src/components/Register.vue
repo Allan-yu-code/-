@@ -30,7 +30,7 @@
             <input placeholder="设置密码" type="password" v-model="password" id="user_password">
             <i class="iconfont ic-password"></i>
           </div>
-          <input type="submit" name="commit" value="注册" class="sign-up-button" id="sign_up_btn" data-disable-with="注册">
+          <input type="submit" value="注册" @click.stop.prevent="regsiterHandler" class="sign-up-button" id="sign_up_btn" data-disable-with="注册">
           <p class="sign-up-msg">点击 “注册” 即表示您同意并愿意遵守荏苒<br> <a target="_blank" href="">用户协议</a> 和 <a target="_blank" href="">隐私政策</a> 。</p>
         </form>
         <!-- 更多注册方式 -->
@@ -64,7 +64,61 @@
         watch:{
           mobile(){
             this.is_show_sms_code = /^1[3-9]\d{9}$/.test(this.mobile);
+            if(this.is_show_sms_code){
+                this.check_mobile();
+            }
           }
+        },
+        methods:{
+            check_mobile(){
+                // 查看手机是否经被注册
+                this.$axios.get(`${this.$settings.Host}/users/mobile/`,{
+                    params:{
+                        mobile:this.mobile
+                    }
+                }).then(response=>{
+
+                }).catch(error=>{
+                   this.$message.error(error.response.data.message);
+                   this.is_show_sms_code = false;
+                });
+            },
+            regsiterHandler(){
+                // 注册处理
+                //1. 验证数据
+                if(this.mobile.length<1 || this.nickname.length<1||this.sms_code.length<1||this.password<1){
+                    this.$message.error("对不起，请完整填写注册信息！");
+                    return;
+                }
+
+                //2. 发送请求
+                this.$axios.post(`${this.$settings.Host}/users/`,{
+                    nickname: this.nickname,
+                    mobile: this.mobile,
+                    sms_code: this.sms_code,
+                    password: this.password,
+                }).then(response=>{
+                   //3. 处理响应信息
+                   sessionStorage.user_token = response.data.token;
+                   sessionStorage.user_id = response.data.id;
+                   sessionStorage.user_name = response.data.username;
+                   sessionStorage.user_avatar = response.data.avatar;
+                   sessionStorage.user_nickname = response.data.nickname;
+                   let name = response.data.nickname || response.data.username;
+                   this.$confirm(`欢迎加入${this.$settings.Website}, ${name}`, '注册成功', {
+                      confirmButtonText: '跳转到首页',
+                      cancelButtonText: '返回上一页',
+                      type: 'success'
+                    }).then(() => {
+                      this.$router.push("/");
+                    }).catch(() => {
+                      this.$router.go(-1);
+                    });
+                }).catch(error=>{
+                    this.$message.error("注册失败！");
+                });
+
+            }
         }
     }
 </script>
