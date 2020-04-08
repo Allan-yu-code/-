@@ -7,8 +7,9 @@
           <!-- Banner -->
           <div class="banner">
             <el-carousel height="272px" indicator-position="none" :interval="2000">
-              <el-carousel-item v-for="item in 4" :key="item">
-                <h3 class="small">{{ item }}</h3>
+              <el-carousel-item v-for="banner,key in banner_list" :key="key">
+                <a :href="banner.link" v-if="banner.is_http" target="_blank"><img :src="banner.image"></a>
+                <router-link :to="banner.link" v-else><img :src="banner.image"></router-link>
               </el-carousel-item>
             </el-carousel>
           </div>
@@ -102,17 +103,33 @@
       name:"Home",
       data(){
           return {
-
+            banner_list:[],
           }
       },
       components:{
         Header,
         Footer,
+      },
+      created(){
+          this.get_banner();
+      },
+      methods:{
+          get_banner(){
+              this.$axios.get(`${this.$settings.Host}/banner/`).then(response=>{
+                  this.banner_list = response.data;
+              }).catch(error=>{
+                  this.$message.error("网络异常！获取轮播图失败！");
+              })
+          }
       }
   }
 </script>
 
 <style scoped>
+.banner img{
+  max-height: 100%;
+  max-width: 100%;
+}
 .container{
     width: 960px;
     margin-right: auto;

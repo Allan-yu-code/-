@@ -14,3 +14,13 @@ class BannerListAPIView(ListAPIView):
         end_time__gte=datetime.now()
     ).order_by("orders","-id")[:constants.HOME_BANNER_LENGTH]
     serializer_class = BannerModelSerializer
+
+from .models import Nav
+from .serializers import NavModelSerializer
+class NavHeaderListAPIView(ListAPIView):
+    queryset = Nav.objects.filter(is_show=True, is_delete=False, option=1,pid=None).order_by("orders","-id")[:constants.HEADER_NAV_LENGTH]
+    serializer_class = NavModelSerializer
+
+class NavFooterListAPIView(ListAPIView):
+    queryset = Nav.objects.filter(is_show=True, is_delete=False, option=2,pid=None).order_by("orders","-id")[:constants.FOOTER_NAV_LENGTH]
+    serializer_class = NavModelSerializer

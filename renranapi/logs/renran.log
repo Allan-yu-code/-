@@ -1011,3 +1011,156 @@ INFO 2020-04-08 12:17:47,256 basehttp 154 "GET /banner/ HTTP/1.1" 200 6206
 INFO 2020-04-08 12:17:47,726 basehttp 154 "GET /banner/ HTTP/1.1" 200 6206
 INFO 2020-04-08 12:17:47,812 basehttp 154 "GET /banner/ HTTP/1.1" 200 6206
 INFO 2020-04-08 12:17:47,974 basehttp 154 "GET /banner/ HTTP/1.1" 200 6206
+INFO 2020-04-08 12:27:37,837 basehttp 154 "GET /banner/ HTTP/1.1" 200 321
+INFO 2020-04-08 12:27:38,602 basehttp 154 "GET /media/banner/2.jpeg HTTP/1.1" 200 24286
+INFO 2020-04-08 12:27:38,606 basehttp 154 "GET /media/banner/1_Ugun7N0.jpg HTTP/1.1" 304 0
+INFO 2020-04-08 12:27:38,829 basehttp 154 "GET /media/banner/3.jpg HTTP/1.1" 200 3016877
+INFO 2020-04-08 12:28:12,639 basehttp 154 "GET /xadmin/home/banner/2/update/ HTTP/1.1" 200 19512
+INFO 2020-04-08 12:28:12,781 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 12:28:25,061 basehttp 154 "POST /xadmin/home/banner/2/update/ HTTP/1.1" 302 0
+INFO 2020-04-08 12:28:25,565 basehttp 154 "GET /xadmin/home/banner/? HTTP/1.1" 200 33049
+INFO 2020-04-08 12:28:25,709 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 12:28:30,211 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 12:28:42,218 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 12:30:16,830 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 12:30:17,836 basehttp 154 "GET /media/banner/3.jpg HTTP/1.1" 304 0
+INFO 2020-04-08 12:30:17,886 basehttp 154 "GET /media/banner/1_Ugun7N0.jpg HTTP/1.1" 304 0
+INFO 2020-04-08 12:30:17,900 basehttp 154 "GET /media/banner/2.jpeg HTTP/1.1" 304 0
+INFO 2020-04-08 12:32:39,576 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 12:32:39,908 basehttp 154 "GET /media/banner/1_Ugun7N0.jpg HTTP/1.1" 304 0
+INFO 2020-04-08 12:32:55,471 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 14:40:24,274 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 14:40:24,444 basehttp 154 "GET /media/banner/1_Ugun7N0.jpg HTTP/1.1" 304 0
+INFO 2020-04-08 14:40:24,479 basehttp 154 "GET /media/banner/3.jpg HTTP/1.1" 304 0
+INFO 2020-04-08 14:40:24,486 basehttp 154 "GET /media/banner/2.jpeg HTTP/1.1" 304 0
+INFO 2020-04-08 14:40:55,485 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 14:43:22,460 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 14:48:04,246 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 14:54:45,942 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/models.py changed, reloading.
+INFO 2020-04-08 14:54:50,391 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 14:56:13,273 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/models.py changed, reloading.
+INFO 2020-04-08 14:56:17,399 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 14:59:38,203 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/models.py changed, reloading.
+INFO 2020-04-08 14:59:42,318 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:05:17,759 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/models.py changed, reloading.
+INFO 2020-04-08 15:05:20,032 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:05:39,943 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/models.py changed, reloading.
+INFO 2020-04-08 15:05:42,284 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:16:45,702 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:16:55,602 basehttp 154 "GET /xadmin/home/banner/? HTTP/1.1" 200 33544
+INFO 2020-04-08 15:16:56,016 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,019 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,051 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,064 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,097 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,099 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,141 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,141 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,144 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,155 basehttp 154 "GET /static/xadmin/css/xadmin.widget.editable.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,202 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,211 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:16:56,221 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,246 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,260 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,261 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,264 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,265 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,295 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,312 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,322 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,325 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.editable.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,340 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,367 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,368 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,369 basehttp 154 "GET /static/xadmin/vendor/bootstrap-clockpicker/bootstrap-clockpicker.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,370 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,372 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,374 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:16:56,518 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2020-04-08 15:17:16,742 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/models.py changed, reloading.
+INFO 2020-04-08 15:17:20,258 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:17:22,749 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 21414
+INFO 2020-04-08 15:17:22,865 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:17:24,655 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 21414
+INFO 2020-04-08 15:17:24,782 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:17:35,548 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:17:40,202 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 21414
+INFO 2020-04-08 15:17:40,392 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:17:44,097 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 21414
+INFO 2020-04-08 15:17:44,205 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:18:15,720 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 16456
+INFO 2020-04-08 15:18:15,848 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2020-04-08 15:18:15,877 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2020-04-08 15:18:15,945 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2020-04-08 15:18:15,949 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:18:15,977 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.quick-form.js HTTP/1.1" 304 0
+INFO 2020-04-08 15:18:15,997 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:18:16,065 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2020-04-08 15:18:16,072 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2020-04-08 15:18:16,081 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+WARNING 2020-04-08 15:18:16,084 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+WARNING 2020-04-08 15:18:16,390 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:18:57,396 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2020-04-08 15:18:57,766 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 26096
+INFO 2020-04-08 15:18:57,905 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:19:00,855 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 16490
+WARNING 2020-04-08 15:19:01,052 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:19:01,062 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2020-04-08 15:19:01,446 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:19:37,598 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2020-04-08 15:19:37,922 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 27264
+INFO 2020-04-08 15:19:38,132 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:19:40,697 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 16524
+WARNING 2020-04-08 15:19:40,831 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:19:40,858 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2020-04-08 15:19:41,121 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:20:25,231 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2020-04-08 15:20:25,736 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 16901
+WARNING 2020-04-08 15:20:25,814 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:20:25,887 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2020-04-08 15:20:26,247 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:20:48,560 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2020-04-08 15:20:49,032 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 16935
+WARNING 2020-04-08 15:20:49,225 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:20:49,274 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2020-04-08 15:20:49,610 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:21:29,988 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2020-04-08 15:21:30,330 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 30763
+INFO 2020-04-08 15:21:30,454 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:22:15,418 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/views.py changed, reloading.
+INFO 2020-04-08 15:22:19,136 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:25:07,006 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/views.py changed, reloading.
+INFO 2020-04-08 15:25:09,591 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:26:04,503 autoreload 203 /home/moluo/Desktop/renran/renranapi/renranapi/apps/home/urls.py changed, reloading.
+INFO 2020-04-08 15:26:07,042 autoreload 578 Watching for file changes with StatReloader
+INFO 2020-04-08 15:26:21,621 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 6190
+INFO 2020-04-08 15:26:32,978 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 5282
+INFO 2020-04-08 15:26:38,122 basehttp 154 "GET /xadmin/home/nav/add/ HTTP/1.1" 200 16626
+WARNING 2020-04-08 15:26:38,235 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:26:38,264 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2020-04-08 15:26:38,579 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:26:58,756 basehttp 154 "POST /xadmin/home/nav/add/ HTTP/1.1" 302 0
+INFO 2020-04-08 15:26:59,469 basehttp 154 "GET /xadmin/home/nav/ HTTP/1.1" 200 31966
+INFO 2020-04-08 15:26:59,588 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:27:03,432 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 5536
+INFO 2020-04-08 15:34:47,931 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 15:34:48,113 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 281
+INFO 2020-04-08 15:34:48,486 basehttp 154 "GET /media/banner/2.jpeg HTTP/1.1" 304 0
+INFO 2020-04-08 15:34:48,509 basehttp 154 "GET /media/banner/1_Ugun7N0.jpg HTTP/1.1" 304 0
+INFO 2020-04-08 15:34:48,535 basehttp 154 "GET /media/banner/3.jpg HTTP/1.1" 304 0
+INFO 2020-04-08 15:35:15,766 basehttp 154 "GET /xadmin/home/nav/3/update/ HTTP/1.1" 200 16943
+INFO 2020-04-08 15:35:16,001 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2020-04-08 15:35:16,011 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+WARNING 2020-04-08 15:35:16,649 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 404 1769
+INFO 2020-04-08 15:35:28,112 basehttp 154 "POST /xadmin/home/nav/3/update/ HTTP/1.1" 302 0
+INFO 2020-04-08 15:35:29,058 basehttp 154 "GET /xadmin/home/nav/? HTTP/1.1" 200 31897
+INFO 2020-04-08 15:35:29,517 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-08 15:35:35,133 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 15:35:35,193 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 281
+INFO 2020-04-08 15:38:06,081 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 15:38:06,107 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 91
+INFO 2020-04-08 15:38:06,118 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 281
+INFO 2020-04-08 15:39:40,193 basehttp 154 "GET /banner/ HTTP/1.1" 200 314
+INFO 2020-04-08 15:39:40,198 basehttp 154 "GET /nav/footer/ HTTP/1.1" 200 91
+INFO 2020-04-08 15:39:40,208 basehttp 154 "GET /nav/header/ HTTP/1.1" 200 281
