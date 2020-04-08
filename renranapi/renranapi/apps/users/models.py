@@ -5,7 +5,7 @@ class User(AbstractUser):
     wxchat = models.CharField(max_length=100, null=True, unique=True, help_text="微信账号", verbose_name="微信账号")
     qq_number = models.CharField(max_length=11, null=True, unique=True, help_text="QQ号", verbose_name="QQ号")
     alipay = models.CharField(max_length=100, null=True, unique=True, help_text="支付宝账号", verbose_name="支付宝账号")
-    # 保存文件的子目录
+    # 保存文件的子目录 ImageField和FileField字段类型内置了文件上传处理类
     avatar = models.ImageField(upload_to="avatar", null=True, default=None, verbose_name="头像")
     money  = models.DecimalField(max_digits=8, decimal_places=2,default=0, help_text="账户余额", verbose_name="账户余额")
     nickname = models.CharField(max_length=20, null=True, unique=True, help_text="用户昵称",verbose_name="用户昵称")

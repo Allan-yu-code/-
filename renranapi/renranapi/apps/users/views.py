@@ -38,13 +38,14 @@ class CaptchaAPIView(APIView):
             return False
 
 from rest_framework.generics import CreateAPIView
+from rest_framework.mixins import CreateModelMixin
 from .models import User
 from .serializers import UserModelSerializer
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.decorators import action
 from rest_framework import status
 import re
-class UserAPIView(GenericViewSet,CreateAPIView):
+class UserAPIView(GenericViewSet,CreateModelMixin):
     """用户视图接口"""
     queryset = User.objects.all()
     serializer_class = UserModelSerializer
@@ -62,13 +63,12 @@ class UserAPIView(GenericViewSet,CreateAPIView):
         except:
             return Response({"message":"手机号可以注册使用！"}, status=status.HTTP_200_OK)
 
-from renranapi.libs.yuntongxun.sms import CCP
 from django_redis import get_redis_connection
 from django.conf import settings
 from renranapi.settings import constants
 import random
-import logging
-loger = logging.getLogger("django")
+from mycelery.sms.tasks import send_sms
+
 class SMSCodeAPIView(APIView):
     """
     短信验证码
@@ -83,13 +83,13 @@ class SMSCodeAPIView(APIView):
         # 1. 生成验证码
         sms_code = "%05d" % random.randint(0,99999)
         # 2. 保存验证码到redis中
-        redis_conn.setex( "sms_%s" % mobile, constants.SMS_EXPIRE_TIME, sms_code )
-        redis_conn.setex( "interval_%s" % mobile, constants.SMS_INTERVAL_TIME,"_")
-        # 3. 发送验证码
-        ccp = CCP()
-        ret = ccp.send_template_sms(mobile,[sms_code,constants.SMS_EXPIRE_TIME//60], settings.SMS["_templateID"])
-        if not ret:
-            loger.error("发送短信失败！用户:%s" % mobile )
+        pipe = redis_conn.pipeline()
+        pipe.multi() # 开启事务[添加/修改/删除]
+        pipe.setex( "sms_%s" % mobile, constants.SMS_EXPIRE_TIME, sms_code )
+        pipe.setex( "interval_%s" % mobile, constants.SMS_INTERVAL_TIME, "_" )
+        pipe.execute() # 执行事务，如果事务执行过程中出现错误，则会抛出异常
+        # 3. 异步发送验证码
+        send_sms.delay(mobile, sms_code)
 
         # 4. 返回响应信息
         return Response({"message":"短信已经发送，请留意您的手机短信！"})

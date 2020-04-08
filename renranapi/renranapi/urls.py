@@ -23,8 +23,14 @@ xadmin.autodiscover()
 from xadmin.plugins import xversion
 xversion.register_models()
 
+from django.urls import re_path
+from django.conf import settings
+from django.views.static import serve
+
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('xadmin/', xadmin.site.urls),
+    re_path('^media/(?P<path>.*)$', serve, {"document_root": settings.MEDIA_ROOT}),
     path('users/', include("users.urls")),
+    path('', include("home.urls")),
 ]
