@@ -8,7 +8,7 @@ class User(AbstractUser):
     # 保存文件的子目录 ImageField和FileField字段类型内置了文件上传处理类
     avatar = models.ImageField(upload_to="avatar", null=True, default=None, verbose_name="头像")
     money  = models.DecimalField(max_digits=8, decimal_places=2,default=0, help_text="账户余额", verbose_name="账户余额")
-    nickname = models.CharField(max_length=20, null=True, unique=True, help_text="用户昵称",verbose_name="用户昵称")
+    nickname = models.CharField(max_length=20, default="暂无", null=True, unique=True, help_text="用户昵称",verbose_name="用户昵称")
 
     class Meta:
         db_table = "rr_users"
@@ -16,4 +16,4 @@ class User(AbstractUser):
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return self.nickname
+        return self.nickname if self.nickname else self.username

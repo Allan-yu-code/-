@@ -33,4 +33,6 @@ urlpatterns = [
     re_path('^media/(?P<path>.*)$', serve, {"document_root": settings.MEDIA_ROOT}),
     path('users/', include("users.urls")),
     path('', include("home.urls")),
+    path('oauth/', include("oauth.urls")),
+    path('article/', include("article.urls")),
 ]

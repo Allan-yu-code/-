@@ -28,6 +28,14 @@ import axios from 'axios'; // 从node_modules目录中导入包
 axios.defaults.withCredentials = false;
 Vue.prototype.$axios = axios; // 把axios对象挂载组件vm对象中
 
+// 引入网站的图标样式
+import "../static/css/iconfont.css";
+
+// 注册mavon-editor组件
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+Vue.use(mavonEditor);
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -35,3 +43,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+// new Vue后面不要写任何的代码，不管用，系统不识别！！！！

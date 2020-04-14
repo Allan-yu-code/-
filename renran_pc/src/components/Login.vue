@@ -2,8 +2,6 @@
     <div class="sign">
     <div class="logo"><router-link to="/"><img src="/static/image/nav-logo.png" alt="Logo"></router-link></div>
     <div class="main">
-
-
 <h4 class="title">
   <div class="normal-title">
     <router-link class="active" to="/login">登录</router-link>
@@ -44,7 +42,7 @@
     </a>
   </li>
   <li><a id="weixin" class="weixin" target="_blank" href=""><i class="iconfont ic-wechat"></i></a></li>
-  <li><a id="qq" class="qq" target="_blank" href=""><i class="iconfont ic-qq_connect"></i></a></li>
+  <li><a id="qq" class="qq" target="_blank" href="" @click.stop.prevent="qq_login"><i class="iconfont ic-qq_connect"></i></a></li>
 </ul>
   </div>
 </div>
@@ -139,6 +137,20 @@
                     });
                 });
                 captcha.show();
+            },
+            qq_login(){
+                // 跳转到QQ第三方登录页面
+                this.$axios.get(`${this.$settings.Host}/oauth/qq/url/`,{
+                    params: {
+                        state: "/",
+                    }
+                }).then(response=>{
+                    let url = response.data;
+                    // 跳转到登录页面
+                    location.href = url;
+                }).catch(error=>{
+                    this.$message.error("网络错误!无法使用QQ登录!");
+                });
             }
         }
     }
