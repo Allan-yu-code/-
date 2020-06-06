@@ -1,6 +1,6 @@
 本项目为仿内容咨询类项目网站，所用前端html+css代码为简书的代码，Vue和后端代码自己完成，功能基本一致
 
-基于Django RESTFramework + Vue实现 
+基于Django RESTFramework + Vue实现 ，以下功能仅为一部分
 
 文章打赏等功能
 
